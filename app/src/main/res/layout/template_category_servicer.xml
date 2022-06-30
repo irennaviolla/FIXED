@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailServicer"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="30sp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="160sp"
+            android:background="#191D40"
+            android:padding="10sp"
+            app:shapeAppearanceOverlay="@style/rounded"
+            app:strokeColor="#191D40"></com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/servicerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="30sp"
+            android:textColor="#ECEEFD"
+            android:text="Name"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/servicerCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:layout_marginLeft="30sp"
+            android:textColor="#ECEEFD"
+            android:text="Category">
+        </TextView>
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225sp"
+            android:layout_marginTop="115sp"
+            android:text="Rating : 0.0/5"
+            android:textColor="#ECEEFD"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/servicerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="160sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:background="#ECEEFD"
+            android:padding="10sp"
+            app:shapeAppearanceOverlay="@style/rounded"
+            app:strokeColor="#191D40"
+            app:strokeWidth="2sp">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

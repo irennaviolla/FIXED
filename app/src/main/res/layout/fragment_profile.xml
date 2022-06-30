@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="28sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#EF5350"
+                android:textSize="24sp"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:id="@+id/offer"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/search_box"
+                android:text="Offer your services"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#F25765"></Button>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="155sp"
+                android:layout_height="155sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:clickable="true"
+                android:padding="5sp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="#191D40"
+                app:strokeWidth="2sp"></com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/nameProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                android:text="FULL NAME"
+                android:textAlignment="center"
+                android:textColor="#2D305B"
+                android:textSize="21sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Click edit symbol to change profile and click again to save"
+                android:textColor="#616161"
+                android:textSize="13sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="#616161"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="username"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="#80191D40"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#616161"
+                    android:textSize="15sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/bEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/edit"
+                    android:clickable="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/emailProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="email"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"></TextView>
+
+                <EditText
+                    android:id="@+id/emailProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:visibility="gone"></EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="#80191D40"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#616161"
+                    android:textSize="15sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/bPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/edit"
+                    android:clickable="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/phoneNumberProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="08xxxxxxxxxx"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"></TextView>
+
+                <EditText
+                    android:id="@+id/phoneProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:visibility="gone"></EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="#80191D40"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#616161"
+                    android:textSize="15sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/bAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/edit"
+                    android:clickable="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/addressProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="address"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"></TextView>
+
+                <EditText
+                    android:id="@+id/addressProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:visibility="gone"></EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="#80191D40"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textColor="#616161"
+                    android:textSize="15sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/bDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/edit"
+                    android:clickable="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/dobProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="11 August 2000"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"></TextView>
+
+                <EditText
+                    android:id="@+id/dobProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:textColor="#616161"
+                    android:textSize="15sp"
+                    android:visibility="gone"></EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="#80191D40"></View>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="100sp"
+                android:background="@drawable/search_box"
+                android:text="Log Out"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#F25765"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

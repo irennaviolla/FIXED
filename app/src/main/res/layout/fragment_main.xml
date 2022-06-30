@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.main.MainFragment">
+
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28sp"
+        android:layout_marginTop="28sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#F25765"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Username !"
+            android:textColor="#2D305B"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:text="Categories"
+            android:textColor="#F25765"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/allCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/television"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/television"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Television"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refrigerator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/refrigerator"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Refrigerator"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/airConditioner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+
+                        android:background="@drawable/ac"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Air Conditioner"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dispenser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/dispenser"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Dispenser"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/washingMachine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/washing_machine"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Washing Machine"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/fan"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Fan"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/speaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/speaker"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Speaker"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/computer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/computer"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Computer"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/laptop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/laptop"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Laptop"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/handphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="7sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:background="@drawable/smartphone"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="Handphone"
+                        android:textAlignment="center"
+                        android:textColor="#191D40"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bestDeal"
+        android:layout_below="@id/categoryContainer"
+        android:layout_marginTop="7sp"
+        android:layout_marginRight="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="28sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Deal"
+            android:textColor="#F25765"
+            android:textStyle="bold"
+            android:textSize="24sp">
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="7sp"
+            android:background="@drawable/promo">
+        </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

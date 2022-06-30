@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "482458029699",
+    "project_id": "fixedofficial-f94c9",
+    "storage_bucket": "fixedofficial-f94c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482458029699:android:ab75feb328acc8b06615b6",
+        "android_client_info": {
+          "package_name": "com.tugasmoop.projectsoftwareengineering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482458029699-3g0rkn8ktqn75dkbibohiaa03ok5586f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1XWUMek8ijz_EB8Ukd-nCiFiIyjP5wK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482458029699-3g0rkn8ktqn75dkbibohiaa03ok5586f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

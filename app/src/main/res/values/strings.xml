@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjectSoftwareEngineering</string>
+    <string name="register_string"><u>Register</u></string>
+    <string name="register_login"><u>Login</u></string>
+    <string name="change_profile"><u>Change Profile</u></string>
+    <string name="change_description"><u>Tap to change description</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

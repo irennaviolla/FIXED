@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.profile.ShowProfile">
+
+    <LinearLayout
+        android:id="@+id/boxPicProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/boxEditPic"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/picProfile"
+            android:layout_width="match_parent"
+            android:layout_height="400sp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxEditPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:isScrollContainer="false">
+        <Button
+            android:id="@+id/bEditPic"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/search_box"
+            android:text="Edit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#191D40"
+            ></Button>
+    </LinearLayout>
+
+</RelativeLayout>

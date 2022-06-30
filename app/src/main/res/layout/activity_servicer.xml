@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.service.ServicerActivity">
+
+    <FrameLayout
+        android:id="@+id/servicerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/menu"
+        android:isScrollContainer="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/order"
+            android:onClick="toOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_history_24"></ImageView>
+            <ImageView
+                android:id="@+id/orderDot"
+                android:layout_width="8sp"
+                android:layout_height="8sp"
+                android:visibility="invisible"
+                android:background="@drawable/ic_baseline_brightness_1_24"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:onClick="toProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_account_circle_24"></ImageView>
+
+            <ImageView
+                android:id="@+id/profileDot"
+                android:layout_width="8sp"
+                android:layout_height="8sp"
+                android:background="@drawable/ic_baseline_brightness_1_24"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

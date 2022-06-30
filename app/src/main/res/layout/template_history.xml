@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/boxHistory"
+    android:clickable="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="25sp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#191D40"></ImageView>
+
+    <ImageView
+        android:id="@+id/waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280sp"
+        android:layout_marginTop="70sp"></ImageView>
+
+    <TextView
+        android:id="@+id/dateTimeHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="40sp"
+        android:text="Date and Time"
+        android:textColor="#ECEEFD"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/categoryHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="70sp"
+        android:text="Category : "
+        android:textColor="#ECEEFD"></TextView>
+
+    <TextView
+        android:id="@+id/statusHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="90sp"
+        android:text="Status : "
+        android:textColor="#ECEEFD"></TextView>
+
+    <TextView
+        android:id="@+id/nameServicerHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="110sp"
+        android:text="Servicer name : "
+        android:textColor="#ECEEFD"></TextView>
+
+    <TextView
+        android:id="@+id/phoneServicerHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="130sp"
+        android:text="Servicer phone number : "
+        android:textColor="#ECEEFD"></TextView>
+
+
+</RelativeLayout>
