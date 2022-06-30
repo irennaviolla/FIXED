@@ -28,13 +28,7 @@
             android:name=".TransactionHistory"
             android:exported="false" />
         <activity
-            android:name=".ShowOrder"
-            android:exported="false" />
-        <activity
             android:name=".UI.service.ServicerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ShowHistory"
             android:exported="false" />
         <activity
             android:name=".UI.service.PendingPage"
